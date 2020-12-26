@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="Content-Security-Policy: connect-src *; default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'"/>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="css/loader.css">
+    </head>
+    <body>
+        <div class="app">
+            <h1>Apache Cordova</h1>
+            <div id="deviceready" class="blink">
+                <p class="event listening">Connecting to Device</p>
+                <p class="event received">Device is Ready</p>
+                <p id="score"></p>
+            </div>
+            <div id="div-pseudo">
+               
+                <label for="pseudo">pseudo</label>
+                <input type="text" name="pseudo" id="pseudo">
+                <button id="valider-pseudo">valider</button>
+    
+            </div> 
+            <p id="resultat"></p>
+        </div>
+        <div id="loader">
+        
+           
+        </div>
+        <p id="attente">En attente d'adversaire</p>
+        <p id="att"></p>
+        <p id="seconde"></p>
+        
+
+
+
+        <!--
+        <script src="http://10.0.2.2:8080/socket.io/socket.io.js"></script>
+        -->
+        
+
+    <!--<script src="http://127.0.0.1:8080/socket.io/socket.io.js"></script>  -->
+    <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+
+
+
+        <script src="js/p5.min.js"></script>
+        <script src="js/playground.js"></script>
+        <script src="js/player.js"></script>
+        <script src="js/index.js"></script>
+        
+    </body>
+</html>
